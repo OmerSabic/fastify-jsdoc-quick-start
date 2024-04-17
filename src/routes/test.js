@@ -1,6 +1,12 @@
-import type { FastifyInstance } from "fastify";
+/** @typedef {import("fastify").FastifyInstance} FastifyInstance */
 
-export const testRoutes = (fastify: FastifyInstance, _: unknown, done: () => void) => {
+/**
+ * 
+ * @param {FastifyInstance} fastify 
+ * @param {unknown} _ 
+ * @param {() => void} done 
+ */
+export const testRoutes = (fastify, _, done) => {
   fastify.get("/", async (request, response) => {
     const visits = Number(await request.redis.get("visits"));
 

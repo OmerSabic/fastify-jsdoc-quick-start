@@ -2,6 +2,7 @@
   "name": "fastify-drizzle-quick-start",
   "version": "1.0.0",
   "description": "Quick start for Fastify, TypeScript, ESlint, Prettier and DrizzleORM",
+  "type": "module",
   "main": "index.js",
   "repository": "https://github.com/Looskie/fastify-drizzle-quick-start.git",
   "author": "Cody Miller <50378828+Looskie@users.noreply.github.com>",
@@ -12,7 +13,7 @@
     "prettier": "prettier --write .",
     "migrate": "drizzle-kit generate:pg",
     "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
-    "start": "node dist/index.js"
+    "start": "node src/index.js"
   },
   "devDependencies": {
     "@types/cli-color": "^2.0.6",

@@ -1,10 +1,9 @@
-import { initDb } from "@api/db";
-import { testRoutes } from "@api/routes";
-import { env, Logger, Redis } from "@api/utils";
+import { initDb } from "./db/index.js";
+import { testRoutes } from "./routes/index.js";
+import { env, Logger, Redis } from "./utils/index.js";
 import fastify from "fastify";
-import { middleware } from "./modules/middleware";
+import { middleware } from "./modules/middleware.js";
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const API_VERSION = "v1";
 
 export const main = async () => {

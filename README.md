@@ -1,6 +1,6 @@
-# fastify-drizzle-quick-start
+# fastify-jsdoc-quick-start
 
-Quick start for Fastify, TypeScript, ESlint, Prettier and DrizzleORM
+Quick start for Fastify, JSDoc, ESlint, Prettier and DrizzleORM
 
 
 ## Quick Start
@@ -8,7 +8,7 @@ Quick start for Fastify, TypeScript, ESlint, Prettier and DrizzleORM
 ### Comes equipped with
 
 - Dockerfile including postgres and redis
-- TypeScript
+- JSDoc type annotations
 - XO
 - Prettier
 - DrizzleORM
@@ -30,5 +30,9 @@ Quick start for Fastify, TypeScript, ESlint, Prettier and DrizzleORM
 4. Run `yarn dev` to start the dev server
 5. Make your changes
 6. Run `yarn lint` to lint your code
-7. Run `yarn build` to build the project
-8. Run `yarn start` to start the production server
+7. Run `yarn start` to start the production server
+
+
+# Credits
+
+Originally cloned from https://github.com/Looskie/fastify-drizzle-quick-start and transformed to use JSDoc over Typescript
